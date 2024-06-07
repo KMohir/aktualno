@@ -11,7 +11,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 from selenium.webdriver.support.wait import WebDriverWait
 import asyncio
-from telegram import Bot
+
 
 
 from selenium.webdriver.common.by import By
@@ -58,16 +58,7 @@ def chrome4():
                 # Once the element is clickable, perform the click action
                 sana1 = sana.text
             except Exception as exx:
-                bot = Bot(token='6803537624:AAEYxZWB0UsaWNoAgfCkgYDVYJG7mMM6BJ8')
-
-                async def send_message(chat_id, text):
-                    await bot.send_message(chat_id=chat_id, text=text)
-
-                # Run the async function
-                asyncio.run(send_message(chat_id=-1002218438906, text='SITE DOWN'))
-
-                driver.refresh()
-                chrome4()
+                print('111111111')
             try:
                 if str(sana1)==str(sa):
                     time.sleep(2)
