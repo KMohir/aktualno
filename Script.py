@@ -32,7 +32,7 @@ options.add_experimental_option('excludeSwitches', ['enable-logging'])
 
 options.add_experimental_option("excludeSwitches", ["enable-automation"])
 options.add_experimental_option('useAutomationExtension', False)
-options.add_argument("--headless")
+# options.add_argument("--headless")
 driver = webdriver.Chrome(options=options)
 
 
